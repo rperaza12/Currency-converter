@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to currency converter</h2>
+    <form action="currencyConverter.php" method="post">
+
+        <!-- amount -->
+        <label> Amount</label> 
+        <input type="text" name="amount" placeholder="Enter amount" required>
+        <br><br>
+
+        <!-- converting from - buttons -->
+        
+        <div class="radio-group">
+            <label>Convert From:</label>
+            <label><input type="radio" name="from" value="CAN" required><img src="flags/canada-flag-xs.png" alt="Canada Flag" width="20"> CAD </label>
+            <label><input type="radio" name="from" value="USD" required><img src="flags/united-states-of-america-flag-xs.png" alt="US Flag" width="20"> USD </label>
+            <label><input type="radio" name="from" value="EUR" required><img src="flags/germany-flag-xs.png" alt="GER Flag" width="20"> EUR </label>
+            <label><input type="radio" name="from" value="GBP" required><img src="flags/united-kingdom-flag-xs.png" alt="GBP Flag" width="20"> GBP </label>
+            <label><input type="radio" name="from" value="CNY" required><img src="flags/china-flag-xs.png" alt="CNY Flag" width="20"> CNY </label>
+        </div>
+
+        <br><br>
+
+        <div class="radio-group">
+            <label>Convert To:</label>
+            <label><input type="radio" name="to" value="CAN" required><img src="flags/canada-flag-xs.png" alt="Canada Flag" width="20"> CAD </label>
+            <label><input type="radio" name="to" value="USD" required><img src="flags/united-states-of-america-flag-xs.png" alt="US Flag" width="20"> USD </label>
+            <label><input type="radio" name="to" value="EUR" required><img src="flags/germany-flag-xs.png" alt="GER Flag" width="20"> EUR </label>
+            <label><input type="radio" name="to" value="GBP" required><img src="flags/united-kingdom-flag-xs.png" alt="GBP Flag" width="20"> GBP </label>
+            <label><input type="radio" name="to" value="CNY" required><img src="flags/china-flag-xs.png" alt="CNY Flag" width="20"> CNY </label>
+        </div>
+
+        <br><br><br>
+
+        <input type="submit" value="Convert">
+        
+    </form>
+</body>
+</html>
